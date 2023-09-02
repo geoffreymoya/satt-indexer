@@ -1,0 +1,59 @@
+
+{
+  "network_node_url":"https://starknet-goerli.infura.io/v3/e0a5761e92314d07bddd9511db6b166d",
+  "sources": [
+    {
+      "contract":"", 
+      "start":829392,
+      "deploy_fn": "handleDeploy",
+      "events": [
+        {
+          "name": "Request",
+          "fn": "handleRequest"
+        },
+        {
+          "name":"CampaignCreated",
+          "fn": "handleCreated"
+        }
+      ]
+    }
+  ],
+  "templates": {
+    "Campaign" : {
+      "events" : [
+        {
+          "name": "Applied",
+          "fn": "handleApplied"
+        },
+        {
+          "name":"Accepted",
+          "fn": "handleAccepted"
+        },
+        {
+          "name": "Rejected",
+          "fn": "handleRejected"
+        },
+        {
+          "name":"Funded",
+          "fn": "handleFunded"
+        },
+        {
+          "name": "Pay",
+          "fn": "handlePay"
+        },
+        {
+          "name":"Result",
+          "fn": "handleResult"
+        },
+        {
+          "name": "Redeem",
+          "fn": "handleRedeem"
+        },
+        {
+          "name":"OutOfFunds",
+          "fn": "handleOutOfFunds"
+        }
+      ]
+    }
+  }
+}

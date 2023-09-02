@@ -1,0 +1,37 @@
+type Campaign {
+  id: String!
+  advertiser: String!
+  url: String!
+  startDate:Int!
+  endDate:Int!
+  typeSn:Int!
+  viewRatio:Int!
+  likeRatio:Int!
+  shareRatio:Int!
+  token:String!
+  totalFunds:String!
+  funds:String!
+  timestamp: Int!
+}
+type Prom {
+  id: String!
+  influencer: String!
+  campaign:Campaign!
+  status:Int!
+  reason:String!
+  amount:String!
+  pendingAmount:String!
+  idUser:String!
+  idPost:String!
+  views:Int!
+  likes:Int!
+  shares:Int!
+}
+type Result {
+  id:String!
+  prom:Prom!
+  views:Int!
+  likes:Int!
+  shares:Int!
+  timestamp: Int!
+}
