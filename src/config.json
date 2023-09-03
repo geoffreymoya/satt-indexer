@@ -3,8 +3,8 @@
   "network_node_url":"https://starknet-goerli.infura.io/v3/e0a5761e92314d07bddd9511db6b166d",
   "sources": [
     {
-      "contract":"", 
-      "start":829392,
+      "contract":"0x046fe16ca86e25ce7238e7f30b814cbc8b65ff76355e587c21b3610902b24dab", 
+      "start":855700,
       "deploy_fn": "handleDeploy",
       "events": [
         {
